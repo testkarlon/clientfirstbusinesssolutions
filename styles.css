@@ -1,0 +1,101 @@
+.mycalendar {
+    font-family: Arial, sans-serif;
+}
+
+.calendar-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#currentMonth {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.day.header {
+    font-weight: bold;
+    border: none;
+    font-size: 1.2em;
+}
+
+.day:not(.header):hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.day.unavailable, .day.weekend {
+    color: red;
+}
+
+.day.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 5px;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
