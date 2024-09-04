@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -32,15 +33,13 @@ footer{
   padding: 10px;
   text-align: center;
   color: black;
-      justify-content: center;
-  align-items: center;
     }
 </style>
 </head>
 <body>
 
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><img src="CF Black Transparent.png" alt="Client First Business Solutions" width="60" height="60"><b> Client First Business Solutions</b></a>
+    <div class="w3-bar w3-white w3-wide w3-padding-16 w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><img src="CF Black Transparent.png" alt="Client First Business Solutions" width="60" height="60"><b></b></a>
 
 <div class="w3-dropdown-hover w3-right">
   <button class="w3-button"><i class="glyphicon glyphicon-menu-hamburger w3-center w3-padding-16"></i></button>
@@ -75,8 +74,11 @@ footer{
 <p class="w3-animate-top w3-center  w3-bar w3-round">Let us at Client First Business Solutions handle the complexities of payroll. Our customizable payroll packages are designed to fit the unique needs of your business, ensuring accurate and timely payments to your employees. From small startups to established enterprises, we offer flexible payment plans to suit your budget. Experience the peace of mind that comes with expert payroll management. Let's discuss your specific needs during a complimentary consultation.</p>
 
  <div class="w3-center">   
+<button onclick="document.getElementById('id02').style.display='block'" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Book Consultation</b></button>
 
-<a href="booking_index.html" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Book Consultation</b></a> &nbsp; &nbsp; <a href="contact_index.html" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Contact Us</b></a>
+&nbsp; &nbsp;
+     
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Contact Us</b></button>
     
     <br>
     <br>
@@ -92,10 +94,16 @@ footer{
     <img src="taxation2.jpg" style="width:50%"  class="w3-card w3-center w3-border-black">
 </div>
        <br>
-<p class="w3-animate-top w3-center w3-bar w3-round">Navigating the complex tax landscape can be overwhelming. Let Client First Business Solutions guide you through the process. Our expert team provides tailored tax consultation services to help you minimize your tax liability while ensuring compliance. Benefit from our in-depth knowledge of tax laws and regulations. Schedule a complimentary consultation to discuss your specific tax needs and explore how we can optimize your tax strategy.</p>
+<p class="w3-animate-top w3-center w3-bar w3-round">Navigating the complex tax landscape can be overwhelming. Let Client First Business Solu guide you through the process. Our expert team provides tailored tax consultation services to help you minimize your tax liability while ensuring compliance. Benefit from our in-depth knowledge of tax laws and regulations. Schedule a complimentary consultation to discuss your specific tax needs and explore how we can optimize your tax strategy.</p>
   
     <div class="w3-center">   
-<a href="booking_index.html" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Book Consultation</b></a> &nbsp; &nbsp; <a href="contact_index.html" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Contact Us</b></a>
+<button onclick="document.getElementById('id02').style.display='block'" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Book Consultation</b></button>
+        
+&nbsp; &nbsp;
+
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-center w3-bar-item w3-btn w3-round-xlarge w3-grey w3-hover-black w3-text-bold w3-border"><b>Contact Us</b></button>
+
+    <br>
     <br>
     
 </div>     
@@ -105,6 +113,66 @@ footer{
     <br>
     <br>
     <br>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+
+    <header class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="w3-center">Contact Us</h2>
+    </header>
+
+    <div style="display: flex; justify-content: center;">
+
+    <iframe
+      id="JotFormIFrame-242448772112051"
+      title="Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen"
+      src="https://form.jotform.com/242448772112051"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242448772112051']", "https://form.jotform.com/")</script>
+    
+</div>
+  </div>
+</div>
+
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content">
+
+    <header class="w3-container">
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="w3-center">Make An Appointment</h2>
+    </header>
+
+    <div style="display: flex; justify-content: center;">
+   
+    <iframe
+      id="JotFormIFrame-242453993156060"
+      title="Booking form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen"
+      src="https://form.jotform.com/242453993156060"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242453993156060']", "https://form.jotform.com/")</script>
+    
+</div>
+  </div>
+</div>
     
    <footer>
     <p  class="c">&copy; 2024 All Rights Reserved. Client First Business & Financial Consultancy Services</p>
